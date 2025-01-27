@@ -2,6 +2,7 @@ let color1 = document.getElementById("1");
 let color2 = document.getElementById("2");
 let color3 = document.getElementById("3");
 let color4 = document.getElementById("4");
+alert("This is for pc or laptop only");
 
 let colordatas = [
   "1",
