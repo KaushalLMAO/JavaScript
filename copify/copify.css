@@ -35,3 +35,65 @@ body {
 
   margin-bottom: 5px;
 }
+.lists,
+.details {
+  display: flex;
+  flex-direction: column;
+  width: 19%;
+  height: 80dvh;
+  background-color: rgb(0, 0, 0);
+  border-radius: 25px;
+  margin: 2.5px;
+}
+.main {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+.info {
+  height: 80dvh;
+  width: 60.5%;
+  border-radius: 25px;
+  background-color: rgb(0, 0, 0);
+  margin: 2.5px;
+}
+.footer {
+  height: 7.5dvh;
+  width: 99.9%;
+  margin-top: 1dvh;
+  background-color: rgb(0, 0, 0);
+}
+.lists h4 {
+  text-align: center;
+  margin-top: 2px;
+}
+#change {
+  padding: 4px;
+  margin: 10px;
+  background-color: rgb(0, 0, 0);
+  border: 2px solid wheat;
+  transition: all 0.3s ease-in-out;
+}
+#change:active {
+  background-color: rgb(0, 0, 0);
+  border: 2px solid rgb(214, 123, 123);
+}
+#change:hover {
+  background-color: rgb(0, 0, 0);
+  border: 2px solid rgb(214, 123, 123);
+}
+.song {
+  width: 97%;
+  height: 60px;
+  background-color: #383838;
+  margin: 2px;
+  display: flex;
+  align-items: center;
+}
+.details {
+  align-items: center;
+}
+.name_song {
+  text-align: center;
+  display: inline;
+}
