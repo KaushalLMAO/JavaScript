@@ -88,6 +88,7 @@ body {
   background-color: #383838;
   margin: 2px;
   display: flex;
+
   align-items: center;
 }
 .details {
@@ -96,4 +97,16 @@ body {
 .name_song {
   text-align: center;
   display: inline;
+}
+.add {
+  background-color: #383838;
+  margin-left: 10px;
+  width: 30px;
+  border-radius: 50%;
+  height: 30px;
+  border: 2px solid white;
+}
+.add:active {
+  background-color: #383838;
+  border: 1px solid rgb(214, 123, 123);
 }
