@@ -62,7 +62,10 @@ playList1.appendChild(song_name_play1);
 
 playList1.addEventListener("click", () => {
   alert("Playing song");
-  blue.play();
+  let audio1 = document.createElement("audio");
+  audio1.src = "copify/blue.mp3";
+
+  playList1.append(audio1);
 });
 // add to playlist
 let addToPlay1 = document.createElement("button");
