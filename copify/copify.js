@@ -5,7 +5,7 @@ const song_data = [
     song_name: "Blue",
     details: " Yung Kai",
     img_src: "https://i.scdn.co/image/ab67616d0000b273373c63a4666fb7193febc167",
-    song_url: "https://www.youtube.com/watch?v=zXM5sZiRipA",
+    song_url: "copify/blue.mp3",
   },
 ];
 //booleans
@@ -35,7 +35,7 @@ img.style.padding = "5px";
 img.style.borderRadius = "10px";
 song1.appendChild(img);
 // audios
-let blue = new Audio();
+let blue = new Audio("copify / blue.mp3");
 // name
 let song_name1 = document.createElement("p");
 song_name1.textContent = `${song_data[0].song_name}`;
@@ -62,6 +62,7 @@ playList1.appendChild(song_name_play1);
 
 playList1.addEventListener("click", () => {
   alert("Playing song");
+  blue.play();
 });
 // add to playlist
 let addToPlay1 = document.createElement("button");
