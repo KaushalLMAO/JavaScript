@@ -35,7 +35,7 @@ img.style.padding = "5px";
 img.style.borderRadius = "10px";
 song1.appendChild(img);
 // audios
-let blue = new Audio("copify / blue.mp3");
+let blue = new Audio("copify/blue.mp3");
 // name
 let song_name1 = document.createElement("p");
 song_name1.textContent = `${song_data[0].song_name}`;
@@ -62,10 +62,7 @@ playList1.appendChild(song_name_play1);
 
 playList1.addEventListener("click", () => {
   alert("Playing song");
-  let audio1 = document.createElement("audio");
-  audio1.src = "copify/blue.mp3";
-
-  playList1.append(audio1);
+  blue.play();
 });
 // add to playlist
 let addToPlay1 = document.createElement("button");
@@ -87,7 +84,7 @@ addToPlay1.addEventListener("click", () => {
     playlist_data.appendChild(playList1);
   } else {
     // removes from playlist
-    added = true;
+
     addToPlay1.style.border = "2px solid white";
     addToPlay1.style.color = "white";
     added = false;
